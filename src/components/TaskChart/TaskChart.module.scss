@@ -1,0 +1,14 @@
+.chart-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: sizeToRem(30);
+
+    @media (min-width: 1200px) {
+        position: absolute;
+        right: 3%;
+    }
+
+    .chart {
+        width: 200px;
+    }
+}

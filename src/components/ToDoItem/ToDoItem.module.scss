@@ -1,0 +1,45 @@
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: sizeToRem(10);
+    margin-bottom: sizeToRem(10);
+    border-radius: sizeToRem(4);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+    &:hover {
+        background-color: #f0f0f0;
+    }
+
+    &.completed {
+        text-decoration: line-through;
+        background-color: #ecf0f1;
+    }
+
+    button {
+        background-color: transparent;
+        border: none;
+        color: $secondary-red;
+        cursor: pointer;
+        display: flex;
+    }
+}
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.error {
+    color: $red;
+}
+
+.action-wrapper {
+    display: flex;
+
+    .delete-icon {
+        padding: 0 sizeToRem(15);
+    }
+}

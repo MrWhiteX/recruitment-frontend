@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Neucha&display=swap");
+
+.app {
+    font-family: "Neucha", cursive;
+    padding: sizeToRem(20);
+    max-width: 1140px;
+    margin: sizeToRem(50) auto;
+    background-color: $primary-gray;
+    border-radius: sizeToRem(8);
+    box-shadow: 0px sizeToRem(2) sizeToRem(10) rgba(0, 0, 0, 0.1);
+    position: relative;
+
+    .todo-wrapper {
+        display: flex;
+        justify-content: center;
+    }
+
+    .todo {
+        width: 600px;
+    }
+}

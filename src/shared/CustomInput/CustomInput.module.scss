@@ -1,0 +1,29 @@
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: sizeToRem(20);
+
+    input {
+        padding: sizeToRem(10);
+        width: 70%;
+        border: none;
+        border-radius: sizeToRem(4);
+        outline: none;
+        box-shadow: 0px sizeToRem(2) sizeToRem(5) rgba(0, 0, 0, 0.1);
+    }
+
+    button {
+        padding: sizeToRem(10) sizeToRem(15);
+        background-color: $secondary-red;
+        color: white;
+        border: none;
+        border-radius: sizeToRem(4);
+        cursor: pointer;
+        transition: background-color 0.2s;
+
+        &:hover {
+            background-color: $red;
+        }
+    }
+}

@@ -1,26 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import AddTask from "components/AddTask/AddTask";
+import ToDoList from "components/ToDoList/ToDoList";
+import styles from "styles/App.module.scss";
+import Welcome from "components/Welcome/Welcome";
+import TaskChart from "components/TaskChart/TaskChart";
+import { Toaster } from "react-hot-toast";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <div>
+        <Toaster />
+      </div>
+      <Welcome />
+      <TaskChart />
+      <div className={styles["todo-wrapper"]}>
+        <div className={styles["todo"]}>
+          <AddTask />
+          <ToDoList />
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

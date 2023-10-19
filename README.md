@@ -1,46 +1,67 @@
-# Getting Started with Create React App
+# Recruitment Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A frontend application built with React and various tools for recruitment purposes.
 
-## Available Scripts
+## Version
 
-In the project directory, you can run:
+0.1.0
 
-### `yarn start`
+## Setup
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To get started with the project, follow these steps:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Prerequisites
 
-### `yarn test`
+Make sure you have [Node.js](https://nodejs.org/) and [Yarn](https://yarnpkg.com/) installed.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Installation
 
-### `yarn build`
+1. Clone the repository: git clone <repository-url>
+2. Navigate to the project directory: cd recruitment-frontend
+3. Install the dependencies using Yarn: yarn install
+4. Run the application in development mode: yarn start
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Technologies
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- React `^18.2.0`
+- Redux with Redux Toolkit `^1.9.7`
+- React-Redux `^8.1.3`
+- TypeScript `^4.4.2`
+- Sass `^1.69.3`
+- React-Icons `^4.11.0`
+- Chart.js with React integration `^4.4.0` and `^5.2.0`
+- Joi for validation `^17.11.0`
+- Redux persist for state persistence `^6.0.0`
+- and others...
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Scripts
 
-### `yarn eject`
+- `yarn start`: Start the development server
+- `yarn test`: Run tests
+- `yarn build`: Build the app for production
+- `yarn lint`: Lint the code with ESLint
+- `yarn format`: Format the code with Prettier
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Custom Webpack Configuration
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This project uses [CRACO (Create React App Configuration Override)](https://github.com/gsoft-inc/craco) to customize the default Webpack configuration provided by `create-react-app`. This allows for more flexibility in configuring the build process without ejecting from `create-react-app`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Production
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Browsers with more than 0.2% market share
+- Browsers that are not considered "dead"
+- Excluding Opera Mini
 
-## Learn More
+### Development
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Last version of Chrome
+- Last version of Firefox
+- Last version of Safari
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Development Tools
+
+- ESLint with Prettier integration for linting and formatting.
+
+## License
+
+[MIT](LICENSE)
